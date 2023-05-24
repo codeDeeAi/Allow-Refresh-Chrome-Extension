@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auto Refresh Extension</title>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/materialize/css/materialize.min.css"
+      media="screen,projection"
+    />
+  </head>
+  <body class="container">
+    <h1 class="center-align">Auto Refresh Extension</h1>
+    <p class="center-align">
+      The page will refresh automatically when the mouse is inactive.
+    </p>
+
+    <div class="row container">
+      <form class="col s12">
+        <!-- Refresh Time -->
+        <div class="row">
+          <div class="input-field">
+            <input
+              placeholder="60"
+              id="refresh_time"
+              type="number"
+              min="1"
+              class="validate"
+            />
+            <label for="refresh_time_label">Refresh Time (in secs)</label>
+          </div>
+        </div>
+        <!-- Refresh Time Ends -->
+
+        <!-- Mouse Inactivity -->
+        <div class="row">
+          <label for="mouse_inactivity_label" class="">Enable Mouse Inactivity</label>
+          <div class="switch my-3">
+            <label>
+              Off
+              <input type="checkbox" id="mouse_inactivity" />
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+        </div>
+        <!-- Mouse Inactivity Ends -->
+      </form>
+    </div>
+
+    <footer>
+      <p class="center-align">
+        Copyright @<span id="footer__date"></span>. Created by
+        <a
+          href="https://www.adeolabada.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Adeola Bada</a
+        >
+      </p>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="assets/materialize/js/materialize.min.js"
+    ></script>
+
+    <script type="text/javascript" src="src/html.js"></script>
+  </body>
+</html>
